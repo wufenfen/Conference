@@ -37,8 +37,8 @@ html,
 h1 {
     margin: 0;
     padding: 24px 0;
-    color: #fff;
-    font: bold 40px/1.2em Arial, Helvetica, sans-serif;
+    color: #fff;    
+    font: bold 30px/1.2em Arial, Helvetica, sans-serif;
     letter-spacing: -2px;
 }
 
@@ -143,12 +143,13 @@ ul,
 }
 
 .menu_nav ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 .menu_nav ul li {
     margin: 0;
     padding: 0 2px 0 0;
+    list-style-type: none;
     float: left;
 }
 
