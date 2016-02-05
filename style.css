@@ -312,16 +312,15 @@ ul.ex_menu li a:hover {
 
 .fbg .col {
     margin: 0;
-    float: left;
+    height: 80px;
 }
 
-.fbg .c1 {
-    padding: 0 14px 0 0;
+.fbg .c1 { 
+    float: left;
     width: 300px;
 }
 
-.fbg .c2 {
-    padding: 24px 14px;
+.fbg .c2 { 
     width: 260px;
 }
 
