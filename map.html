@@ -1,13 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
     <meta charset="utf-8">
-    <meta name="keywords" content="°Ù¶ÈµØÍ¼,°Ù¶ÈµØÍ¼API£¬°Ù¶ÈµØÍ¼×Ô¶¨Òå¹¤¾ß£¬°Ù¶ÈµØÍ¼Ëù¼û¼´ËùµÃ¹¤¾ß" />
-    <meta name="description" content="°Ù¶ÈµØÍ¼API×Ô¶¨ÒåµØÍ¼£¬°ïÖúÓÃ»§ÔÚ¿ÉÊÓ»¯²Ù×÷ÏÂÉú³É°Ù¶ÈµØÍ¼" />
-    <title>°Ù¶ÈµØÍ¼API×Ô¶¨ÒåµØÍ¼</title>
-    <!--ÒıÓÃ°Ù¶ÈµØÍ¼API-->
+    <meta name="keywords" content="ç™¾åº¦åœ°å›¾,ç™¾åº¦åœ°å›¾APIï¼Œç™¾åº¦åœ°å›¾è‡ªå®šä¹‰å·¥å…·ï¼Œç™¾åº¦åœ°å›¾æ‰€è§å³æ‰€å¾—å·¥å…·" />
+    <meta name="description" content="ç™¾åº¦åœ°å›¾APIè‡ªå®šä¹‰åœ°å›¾ï¼Œå¸®åŠ©ç”¨æˆ·åœ¨å¯è§†åŒ–æ“ä½œä¸‹ç”Ÿæˆç™¾åº¦åœ°å›¾" />
+    <title>ç™¾åº¦åœ°å›¾APIè‡ªå®šä¹‰åœ°å›¾</title>
+    <!--å¼•ç”¨ç™¾åº¦åœ°å›¾API-->
     <style type="text/css">
     html,
     body {
@@ -36,48 +36,48 @@
 </head>
 
 <body>
-    <!--°Ù¶ÈµØÍ¼ÈİÆ÷-->
+    <!--ç™¾åº¦åœ°å›¾å®¹å™¨-->
     <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
 <script type="text/javascript">
-//´´½¨ºÍ³õÊ¼»¯µØÍ¼º¯Êı£º
+//åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾å‡½æ•°ï¼š
 function initMap() {
-    createMap(); //´´½¨µØÍ¼
-    setMapEvent(); //ÉèÖÃµØÍ¼ÊÂ¼ş
-    addMapControl(); //ÏòµØÍ¼Ìí¼Ó¿Ø¼ş
-    addMarker(); //ÏòµØÍ¼ÖĞÌí¼Ómarker
-    addPolyline(); //ÏòµØÍ¼ÖĞÌí¼ÓÏß
+    createMap(); //åˆ›å»ºåœ°å›¾
+    setMapEvent(); //è®¾ç½®åœ°å›¾äº‹ä»¶
+    addMapControl(); //å‘åœ°å›¾æ·»åŠ æ§ä»¶
+    addMarker(); //å‘åœ°å›¾ä¸­æ·»åŠ marker
+    addPolyline(); //å‘åœ°å›¾ä¸­æ·»åŠ çº¿
 }
 
-//´´½¨µØÍ¼º¯Êı£º
+//åˆ›å»ºåœ°å›¾å‡½æ•°ï¼š
 function createMap() {
-    var map = new BMap.Map("dituContent"); //ÔÚ°Ù¶ÈµØÍ¼ÈİÆ÷ÖĞ´´½¨Ò»¸öµØÍ¼
-    var point = new BMap.Point(117.254071, 31.83737); //¶¨ÒåÒ»¸öÖĞĞÄµã×ø±ê
-    map.centerAndZoom(point, 14); //Éè¶¨µØÍ¼µÄÖĞĞÄµãºÍ×ø±ê²¢½«µØÍ¼ÏÔÊ¾ÔÚµØÍ¼ÈİÆ÷ÖĞ
-    window.map = map; //½«map±äÁ¿´æ´¢ÔÚÈ«¾Ö
+    var map = new BMap.Map("dituContent"); //åœ¨ç™¾åº¦åœ°å›¾å®¹å™¨ä¸­åˆ›å»ºä¸€ä¸ªåœ°å›¾
+    var point = new BMap.Point(117.254071, 31.83737); //å®šä¹‰ä¸€ä¸ªä¸­å¿ƒç‚¹åæ ‡
+    map.centerAndZoom(point, 14); //è®¾å®šåœ°å›¾çš„ä¸­å¿ƒç‚¹å’Œåæ ‡å¹¶å°†åœ°å›¾æ˜¾ç¤ºåœ¨åœ°å›¾å®¹å™¨ä¸­
+    window.map = map; //å°†mapå˜é‡å­˜å‚¨åœ¨å…¨å±€
 }
 
-//µØÍ¼ÊÂ¼şÉèÖÃº¯Êı£º
+//åœ°å›¾äº‹ä»¶è®¾ç½®å‡½æ•°ï¼š
 function setMapEvent() {
-    map.enableDragging(); //ÆôÓÃµØÍ¼ÍÏ×§ÊÂ¼ş£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-    map.enableScrollWheelZoom(); //ÆôÓÃµØÍ¼¹öÂÖ·Å´óËõĞ¡
-    map.enableDoubleClickZoom(); //ÆôÓÃÊó±êË«»÷·Å´ó£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-    map.enableKeyboard(); //ÆôÓÃ¼üÅÌÉÏÏÂ×óÓÒ¼üÒÆ¶¯µØÍ¼
+    map.enableDragging(); //å¯ç”¨åœ°å›¾æ‹–æ‹½äº‹ä»¶ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+    map.enableScrollWheelZoom(); //å¯ç”¨åœ°å›¾æ»šè½®æ”¾å¤§ç¼©å°
+    map.enableDoubleClickZoom(); //å¯ç”¨é¼ æ ‡åŒå‡»æ”¾å¤§ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+    map.enableKeyboard(); //å¯ç”¨é”®ç›˜ä¸Šä¸‹å·¦å³é”®ç§»åŠ¨åœ°å›¾
 }
 
-//µØÍ¼¿Ø¼şÌí¼Óº¯Êı£º
+//åœ°å›¾æ§ä»¶æ·»åŠ å‡½æ•°ï¼š
 function addMapControl() {
-    //ÏòµØÍ¼ÖĞÌí¼Ó±ÈÀı³ß¿Ø¼ş
+    //å‘åœ°å›¾ä¸­æ·»åŠ æ¯”ä¾‹å°ºæ§ä»¶
     var ctrl_sca = new BMap.ScaleControl({
         anchor: BMAP_ANCHOR_BOTTOM_LEFT
     });
     map.addControl(ctrl_sca);
 }
 
-//±ê×¢µãÊı×é
+//æ ‡æ³¨ç‚¹æ•°ç»„
 var markerArr = [{
     title: "Swan&nbsp;Lake&nbsp;Hotel",
-    content: "Ìì¶ìºş´ó¾Æµê",
+    content: "å¤©é¹…æ¹–å¤§é…’åº—",
     point: "117.235488|31.823514",
     isOpen: 1,
     icon: {
@@ -90,7 +90,7 @@ var markerArr = [{
     }
 }, {
     title: "North&nbsp;Gate&nbsp;of&nbsp;USTC",
-    content: "ÖĞ¹ú¿Æ¼¼´óÑ§±±ÃÅ",
+    content: "ä¸­å›½ç§‘æŠ€å¤§å­¦åŒ—é—¨",
     point: "117.276651|31.847603",
     isOpen: 0,
     icon: {
@@ -103,7 +103,7 @@ var markerArr = [{
     }
 }, {
     title: "Paradise&nbsp;Hotel",
-    content: "ÌìÍ¥ÉÌÎñ±ö¹İ",
+    content: "å¤©åº­å•†åŠ¡å®¾é¦†",
     point: "117.274728|31.847488",
     isOpen: 0,
     icon: {
@@ -116,7 +116,7 @@ var markerArr = [{
     }
 }, {
     title: "Citihome&nbsp;Hotel",
-    content: "³ÇÊĞÖ®¼Ò",
+    content: "åŸå¸‚ä¹‹å®¶",
     point: "117.276331|31.848083",
     isOpen: 0,
     icon: {
@@ -129,7 +129,7 @@ var markerArr = [{
     }
 }, {
     title: "Guest&nbsp;House",
-    content: "×¨¼ÒÂ¥",
+    content: "ä¸“å®¶æ¥¼",
     point: "117.276201|31.846659",
     isOpen: 0,
     icon: {
@@ -141,7 +141,7 @@ var markerArr = [{
         lb: 12
     }
 }];
-//´´½¨marker
+//åˆ›å»ºmarker
 function addMarker() {
     for (var i = 0; i < markerArr.length; i++) {
         var json = markerArr[i];
@@ -187,13 +187,13 @@ function addMarker() {
         })()
     }
 }
-//´´½¨InfoWindow
+//åˆ›å»ºInfoWindow
 function createInfoWindow(i) {
     var json = markerArr[i];
     var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
     return iw;
 }
-//´´½¨Ò»¸öIcon
+//åˆ›å»ºä¸€ä¸ªIcon
 function createIcon(json) {
     var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
         imageOffset: new BMap.Size(-json.l, -json.t),
@@ -202,7 +202,7 @@ function createIcon(json) {
     })
     return icon;
 }
-//±ê×¢ÏßÊı×é
+//æ ‡æ³¨çº¿æ•°ç»„
 var plPoints = [{
     style: "solid",
     weight: 4,
@@ -210,7 +210,7 @@ var plPoints = [{
     opacity: 0.6,
     points: ["117.275483|31.847833", "117.27268|31.843753", "117.271674|31.841545", "117.271387|31.839183", "117.274728|31.838845", "117.278214|31.838446", "117.28001|31.838262", "117.279579|31.847863", "117.275492|31.847863"]
 }];
-//ÏòµØÍ¼ÖĞÌí¼ÓÏßº¯Êı
+//å‘åœ°å›¾ä¸­æ·»åŠ çº¿å‡½æ•°
 function addPolyline() {
     for (var i = 0; i < plPoints.length; i++) {
         var json = plPoints[i];
@@ -230,7 +230,7 @@ function addPolyline() {
     }
 }
 
-initMap(); //´´½¨ºÍ³õÊ¼»¯µØÍ¼
+initMap(); //åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾
 </script>
 
 </html>
