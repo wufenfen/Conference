@@ -38,7 +38,7 @@ h1 {
     margin: 0;
     padding: 24px 0;
     color: #fff;    
-    font: bold 30px/1.2em Arial, Helvetica, sans-serif;
+    font: bold 26px/1.2em Arial, Helvetica, sans-serif;
     letter-spacing: -2px;
 }
 
@@ -301,11 +301,13 @@ ul.ex_menu li a:hover {
 
 .fbg_resize {
     margin: 0 auto;
-    padding: 16px 40px 24px;
+    padding: 16px 40px 0;
     width: 890px;
-    background: url(images/fbg_bg.gif) no-repeat center top;
 }
 
+.fbg_resizeLine{
+    background: url(images/fbg_bg.gif) no-repeat center top;  
+}
 .fbg img {
     border: 1px solid #d6d6d6;
 }
@@ -317,11 +319,12 @@ ul.ex_menu li a:hover {
 
 .fbg .c1 { 
     float: left;
-    width: 300px;
+    width: 280px;
 }
 
-.fbg .c2 { 
-    width: 260px;
+.c2 p{ 
+    float: left;
+    width: 280px;
 }
 
 .fbg .c3 {
